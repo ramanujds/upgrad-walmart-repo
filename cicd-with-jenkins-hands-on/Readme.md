@@ -153,7 +153,3 @@ Integrating Git with Jenkins allows automatic builds and testing when changes ar
    * Provide the Jenkins webhook URL (e.g., `http://<jenkins-url>/github-webhook/`).
 5. **Trigger Build on Git Changes:**
    * In the job configuration, enable the "Build when a change is pushed to GitHub" option.
-
----
-
-By following these steps, developers can set up and utilize Jenkins to streamline their CI/CD workflows effectively. Practice is key to mastering Jenkins and its integration with various tools.
