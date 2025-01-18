@@ -104,3 +104,24 @@ To list all the images on your local machine, use the `docker images` command.
 ```sh
 docker images
 ```
+
+### Pushing Docker Images to Docker Hub
+
+To push a Docker image to Docker Hub, you need to tag the image with your Docker Hub username and the repository name.
+
+```sh
+docker tag [image-name] [docker-hub-username]/[repository-name]
+```
+
+Then, push the image to Docker Hub using the `docker push` command.
+
+```sh
+docker push [docker-hub-username]/[repository-name]
+```
+
+example:
+
+```sh
+docker tag spring-boot-app ram1uj/spring-boot-app
+docker push ram1uj/spring-boot-app
+```
