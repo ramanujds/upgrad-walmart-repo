@@ -3,3 +3,9 @@ function helloWorld(): void {
 }
 
 helloWorld();
+
+const update = () => {
+    console.log("Update");
+}
+
+update();
