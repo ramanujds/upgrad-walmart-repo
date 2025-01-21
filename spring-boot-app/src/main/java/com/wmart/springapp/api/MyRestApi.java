@@ -8,7 +8,7 @@ public class MyRestApi {
 
     @GetMapping
     public String sayHello(){
-        return "Hello, World! Welcome to Spring Boot!";
+        return "Hello, World! Welcome to Spring Boot! This is test to check github pipeline";
     }
 
 }
