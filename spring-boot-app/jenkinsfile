@@ -1,0 +1,31 @@
+pipeline {
+    agent any
+
+    tools {
+        
+        maven "maven-3.9.9"
+    }
+
+    stages {
+        stage('Build') {
+            steps {
+                // Get some code from a GitHub repository
+                git branch:'main',
+                    url:'https://github.com/ramanujds/upgrad-walmart-repo.git'
+
+                // Run Maven on a Unix agent.
+                dir('spring-boot-app') {
+                    sh "mvn clean package"
+                }
+                
+            }
+
+            post {
+                success {
+                    junit '**/target/surefire-reports/TEST-*.xml'
+                    archiveArtifacts 'spring-boot-app/target/*.jar'
+                }
+            }
+        }
+    }
+}
