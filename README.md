@@ -27,3 +27,13 @@ https://github.com/ramanujds/upgrad-wmart-cicd-jenkins-docker
 9. Create the Jenkins pipeline.
 
 
+**Final Project**
+
+**Step 1:** Develop a new Spring Boot application.
+**Step 2:** Create a Git repository and commit the code.
+**Step 3:** Construct a Jenkins pipeline with stages for code retrieval, testing, building, and pushing the image to DockerHub.
+**Step 4:** Update the code by creating a new feature branch.
+**Step 5:** Push and merge the code by creating a pull request.
+**Step 6:** Verify that Jenkins is retrieving the most recent commit from GitHub.
+
+
