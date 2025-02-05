@@ -8,7 +8,7 @@ public class MyRestApi {
 
     @GetMapping
     public String sayHello(){
-        return "Spring Boot App with Jenkins Pipeline";
+        return "My Frirst Spring Boot";
     }
 
 }
